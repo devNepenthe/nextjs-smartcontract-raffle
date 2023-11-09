@@ -3,7 +3,7 @@ import { MoralisProvider } from "react-moralis";
 
 export default function App({ Component, pageProps }) {
     return (
-        <MoralisProvider>
+        <MoralisProvider initializeOnMount={false}>
             <Component {...pageProps} />
         </MoralisProvider>
     );
